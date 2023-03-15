@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
+/* Base styles */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.heading{
+  text-align: center;
+  color: #002D62;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+
+/* Navbar */
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  color: #000000;
+  left: 0;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #0077ff;
+  border-radius: 4px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+
+/* Hero Section */
+
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Images/LandingPage/HeroPage-BG.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-text {
+  width: 90%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #fff;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text span{
+  color: lightgreen;
+}
+
+.hero p {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.typewrite {
+  color: white;
+}
+
+
+/* Mission  */
+
+
+.mission h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.mission p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-style: italic;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+
+/* What is DCIM  */
+
+
+.dcim-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.dcim-section h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dcim-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dcim-content img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.dcim-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+
+/* Why DCIM */
+
+
+.wdcim_content {
+  margin-top: 20px;
+  display: flex;
+}
+
+.wdcim_content p {
+  text-align: center;
+  align-self: center;
+  padding: 50px;
+  line-height: 2rem;
+}
+
+.whydcim h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.whydcim_cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.whydcim_frame {
+  display: flex;
+  margin-top: 50px;
+  padding: 20px 40px;
+  width: 42%;
+  border-radius: 20px;
+  border: 3px solid #002d62;
+  box-shadow: 4px 2px 4px;
+}
+
+
+.whydcim_frame:hover {
+    color: white;
+    background-color: #002d62;
+    transition: 0.5s ease-in-out;
+    border: 3px solid white;
+}
+
+.whydcim_frame p {
+  padding: 25px 0 10px 10px;
+}
+
+
+
+/* What would you choose */
+
+
+
+/* Numbers */
+
+.section {
+  padding: 4rem 0;
+  margin: 6px;
+}
+
+.container2 {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-four-column {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 80%;
+}
+
+.numbers {
+  background: -webkit-linear-gradient(0deg, #4e54c8 0%, #002d62 100%);
+  text-align: center;
+  transition: all 0.7s linear;
+  color: #fff;
+  border-radius: 30px;
+  width: 70%;
+  margin: 0px auto;
+  margin-top: -15px;
+}
+
+.counter-numbers {
+  font-size: 3.8rem;
+}
+
+.numbers p {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+
+/* Supporters */
+
+.organisation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.org {
+  display: flex;
+  justify-content: space-evenly;
+
+
+}
+
+.organisation_content img {
+height: 200px;
+}
+
+.organisation_content {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.organisation_content h3 {
+  font-weight: 700;
+}
+
+/* Testimonials */
+
+.expert {
+  width: 100%;
+
+  background-color: #e3f2fd;
+  margin-bottom: 50px;
+}
+
+.expert_content {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.expert_content img{
+  max-width: 560px;
+  border: 10px solid #002d62;
+  border-radius: 50%;
+}
+
+.expert h1 {
+  padding-top: 38px;
+
+}
+
+.expert_voice {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0px 100px;
+
+}
+
+.expert_voice h2 {
+
+  border-bottom: 5px solid #002d62;
+  color: rgb(0, 0, 0);
+
+}
+
+.expert_voice h5 {
+  margin-top: 20px;
+  color: grey;
+}
+
+.expert_voice p {
+  padding: 0px 0px;
+
+  font-size: 1.5rem;
+  margin-top: 20px;
+  line-height: 2.5rem;
+}
+
+
+/* Reports */
+
+.report {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+ gap: 2rem;
+
+
+}
+
+
+.report_content {
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.report_content img{
+  width: 100%;
+
+  
+}
+
+
+.report_content h3 {
+  font-style: italic;
+}
+.report-button {
+  border: 2px solid #333;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.report-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* Initiative */
+
+
+.initiate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.initiate_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(81, 187, 217);
+  padding: 30px;
+}
+
+.initiate_content p {
+  font-size: 3.5rem;
+  font-weight: 1000;
+  color: black;
+}
+
+p span {
+  color: red;
+}
+
+p .white {
+  color: white;
+}
+
+
+
+/* Footer */
+
+footer {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  width: calc(100% / 3 - 30px);
+  margin-bottom: 30px;
+}
+
+.footer-column h4 {
+  color: #444;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-column p {
+  color: #777;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #444;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-column ul li a:hover {
+  color: #007bff;
+}
+
+footer form input[type="email"] {
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  width: 70%;
+}
+
+footer form button[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  width: 30%;
+}
+
+footer form button[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+.footer-scroll {
+  height: 10px;
+  background-color: #007bff;
+  animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+/* Responsive Styles */
+
+/* Navbar */
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    nav.active .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav.active .menu li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.active .burger div {
+        background-color: #fff;
+    }
+}
+
+
+/* Hero Page */
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .wdcim_content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wdcim_content img {
+    width: 80%;
+    height: 50%;
+
+  }
+
+  .whydcim_frame {
+    width: 90%;
+  }
+
+  .expert_content {
+    flex-direction: column;
+
+  }
+
+  .expert_content img {
+    width: 30%;
+  }
+
+  .org {
+    flex-wrap: wrap;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .section {
+    padding: 25px;
+    margin-top: 10px;
+  }
+
+  .mission p {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .wdcim_content p {
+    padding: 10px;
+  }
+
+  .whydcim_frame {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+  }
+
+  .whydcim_cards {
+    align-items: center;
+  }
+
+  .whydcim_frame img {
+    width: 25%;
+  }
+
+  .initiate img {
+    width: 20%;
+  }
+
+  .initiate_content p {
+
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  .report_content{
+    width: 100%;
+  }
+  .report_content img {
+    width: 90%;
+  }
+
+  .expert_voice {
+    padding: 10px;
+  }
+
+
+}
+
+
+/* Numbers */
+
+@media(max-width: 768px) {
+  .grid-four-column {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .numbers {
+    width: 392px;
+    margin-left: 130px;
+  }
+}
+
+
+/* Footer */
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-col {
+        flex: 1 1 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-col:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
